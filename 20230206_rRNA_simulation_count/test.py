@@ -19,3 +19,9 @@ with open(str(input)) as f:
             line = line.split("_1_.")[0] ##    #以|为分隔符，只保留第一部分
             line1=line.split("@SYN_")[1] ##    #删除@SYN_前的内容
             f1.write("@SYN_"+line1+"\n")    ##    #还原@SYN_符号
+            
+            
+    
+    
+    
+            
