@@ -193,3 +193,10 @@ input2_type_count = input2_type_count.groupby('Gene type')['count'].sum()
 input2_type_count = input2_type_count.reset_index()
 input2_type_count.to_csv(output2, index=False)
 print('finished'+str(output2))
+#################################PART2 END#################################
+
+# *********************************PART3 START*********************************#
+#统计input2_file中相同Gene Name对应的count，并输出
+input2_file_count = input2_file.groupby('Gene Name')['count'].sum()
+input2_file_count = input2_file_count.reset_index()
+input2_file_count.to_csv(output3, index=False)
