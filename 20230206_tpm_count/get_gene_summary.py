@@ -6,7 +6,7 @@ import sys
 # 传入参数input1<stringtie/.gene_abund.txt>,inpu2<result_summary/.gene_count.txt>
 # # output1< >,output2
 # ref = sys.argv[1]
-ref = "D:\\githubku\\my_jupyter\\20230206_tpm_count\\merge1.txt"
+ref = "/hwfssz5/ST_HEALTH/P20Z10200N0041/zhangyifan1/06_fast_rm_rRNA/merge1.txt"
 input1 = sys.argv[1]
 input2 = sys.argv[2]
 # output1 = sys.argv[3]
@@ -280,6 +280,6 @@ input1_file_TPM_cpm = pd.merge(
 # input1_file_TPM.to_csv(output4, index=False,header=False)
 # input1_file_TPM.to_csv(path+'/'+fileid+"Name_tPM.txt", index=False,header=False)
 input1_file_TPM_cpm.to_csv(
-    path+'/'+fileid+"Name_tPM_cpm.txt", index=False)
+    path+'/'+fileid+"Name_tPM_cpm.csv", index=False)
 print('finished'+str(path+'/'+fileid+"Name_tPM_cpm.txt"))
 ################################# PART3 END#################################
