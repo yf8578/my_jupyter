@@ -1,0 +1,14 @@
+Gene type,count
+Mt_rRNA,63
+Mt_tRNA,121575
+lncRNA,36158
+miRNA,381576
+misc_RNA,1918928
+other,90832
+protein_coding,1780136
+pseudo,598549
+rRNA,74385
+scRNA,2015735
+snRNA,391761
+snoRNA,30652
+tRNA,1005246
