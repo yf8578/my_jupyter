@@ -1,3 +1,0 @@
-Gene type	Gene Name	fr	rf	star
-Mt_rRNA	RNR1	114	113	121
-Mt_rRNA	RNR2	882	686	3616
