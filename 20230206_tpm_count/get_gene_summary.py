@@ -17,8 +17,8 @@ input2 = sys.argv[2]
 # path = "D:\\githubku\\my_jupyter\\20230206_tpm_count\\"
 # fileid = "SGI75460067"
 # 输出
-path=sys.argv[3]
-fileid=sys.argv[4]
+path = sys.argv[3]
+fileid = sys.argv[4]
 
 # output1 = "D:\\githubku\\my_jupyter\\20230206_tpm_count\\SGI75460067.type_TPM.txt"
 # output2 = "D:\\githubku\\my_jupyter\\20230206_tpm_count\\SGI75460067.type_count.txt"
@@ -169,7 +169,8 @@ type_tpm.to_csv(path+'/'+fileid+"TPM_count.txt", index=False)
 print('finished'+str(path+'/'+fileid+"TPM_count.txt"))
 # *********************************PART2 START*********************************#
 # 以csv格式读入input2文件，以,分隔，不设置列名，删除第一行
-input2_file = pd.read_csv(input2, sep=',', header=None, skiprows=1,engine='python')
+input2_file = pd.read_csv(input2, sep=',', header=None,
+                          skiprows=1, engine='python')
 # 第一列按照|分隔，保存为变量input2_file1
 input2_file1 = input2_file[0].str.split('|', expand=True)
 # 将input2_file1和input2_file合并，保存为变量input2_file
@@ -268,18 +269,19 @@ input2_file_count = input2_file_count.sort_values(by='count', ascending=False)
 # 计算input2_file_count中每个Gene Name对应的count的cpm值
 input2_file_count['cpm'] = input2_file_count['count'] / \
     input2_file_count['count'].sum() * 1000000
-
+input2_file_count = input2_file_count.sort_values(
+    by='Gene Name', ascending=True)
+input2_file_count.to_csv(path+'/'+fileid+"Name_count_cpm.csv", index=False)
 
 # 统计input1_file中相同Gene Name对应的TPM，将TPM从大到小排列并输出
 input1_file_TPM = input1_file.groupby('Gene Name')['TPM'].sum()
 input1_file_TPM = input1_file_TPM.reset_index()
 # input1_file_TPM与input2_file_count合并，以Gene Name为键
-input1_file_TPM_cpm = pd.merge(
-    input1_file_TPM, input2_file_count, on='Gene Name', how='left')
+# input1_file_TPM_cpm = pd.merge(
+# input1_file_TPM, input2_file_count, on='Gene Name', how='left')
 # input1_file_TPM = input1_file_TPM.sort_values(by='TPM', ascending=False)
 # input1_file_TPM.to_csv(output4, index=False,header=False)
-# input1_file_TPM.to_csv(path+'/'+fileid+"Name_tPM.txt", index=False,header=False)
-input1_file_TPM_cpm.to_csv(
-    path+'/'+fileid+"Name_tPM_cpm.csv", index=False)
-print('finished'+str(path+'/'+fileid+"Name_tPM_cpm.txt"))
+input1_file_TPM.to_csv(path+'/'+fileid+"Name_tPM.csv", index=False)
+# input1_file_TPM_cpm.to_csv(
+# path+'/'+fileid+"Name_tPM_cpm.txt", index=False)
 ################################# PART3 END#################################

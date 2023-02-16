@@ -1,0 +1,3 @@
+Gene type	Gene Name	Unnamed: 0	Unnamed: 1	Gene Name_RFfr	tpm_RFfr	Gene Name_star	tpm_star
+Mt_rRNA	RNR1	SGI75460076	32005	RNR1	197.377929	RNR1	0.313503
+Mt_rRNA	RNR2	SGI75460076	32006	RNR2	1512.855743	RNR2	7.219889
