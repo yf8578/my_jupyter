@@ -1,0 +1,6 @@
+	read1 pollution rate	read2 pollution rate	average pollution rate
+Bacteria	nan%	nan%	nan%
+Environmental.samples	nan%	nan%	nan%
+fungi	nan%	nan%	nan%
+Phages	12.73%	12.77%	12.75%
+Viruses	21.76%	20.13%	20.95%

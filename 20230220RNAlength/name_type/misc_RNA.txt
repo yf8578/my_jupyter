@@ -1,0 +1,8 @@
+Gene Name	Gene type
+VTRNA2-1	misc_RNA
+VTRNA1-1	misc_RNA
+VTRNA1-2	misc_RNA
+VTRNA1-3	misc_RNA
+RNY4	misc_RNA
+RNY3	misc_RNA
+RNY1	misc_RNA
