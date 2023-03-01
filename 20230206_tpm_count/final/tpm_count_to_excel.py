@@ -5,12 +5,17 @@ import pandas as pd
 import os
 import numpy as np
 import sys
-count_path = sys.argv[1]  # count文件夹路径
-tpm_path = sys.argv[2]  # tpm文件夹路径
-output_count = sys.argv[3]  # '.xlsx'，合并后的count文件
-output_tpm = sys.argv[4]  # '.xlsx'，合并后的tpm文件
-final_output = sys.argv[5]  # '.xlsx'，合并成一个excel表，包含tpm和count两个sheet
-
+count_path = r"C:\Users\zhangyifan1\Desktop\work\0217\type_count"  # count文件夹路径
+tpm_path = r"C:\Users\zhangyifan1\Desktop\work\0217\tpm_count"  # tpm文件夹路径
+output_count = r"C:\Users\zhangyifan1\Desktop\work\0217\count.xlsx"  # '.xlsx'，合并后的count文件
+output_tpm = r"C:\Users\zhangyifan1\Desktop\work\0217\tpm.xlsx"  # '.xlsx'，合并后的tpm文件
+# '.xlsx'，合并成一个excel表，包含tpm和count两个sheet"  # count文件夹路径
+final_output = r"C:\Users\zhangyifan1\Desktop\work\0217\final.xlsx"
+# count_path = sys.argv[1]  # count文件夹路径
+# tpm_path = sys.argv[2]  # tpm文件夹路径
+# output_count = sys.argv[3]  # '.xlsx'，合并后的count文件
+# output_tpm = sys.argv[4]  # '.xlsx'，合并后的tpm文件
+# final_output = sys.argv[5]  # '.xlsx'，合并成一个excel表，包含tpm和count两个sheet
 file_listcount = os.listdir(count_path)
 # 删除文件名中的.gene_tpm.txt，赋值给变量file_tpmname
 file_countname = [file.split('.')[0] for file in file_listcount]
