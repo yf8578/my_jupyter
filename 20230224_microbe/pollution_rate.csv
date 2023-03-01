@@ -1,4 +1,0 @@
-	read1_redundancy	read1_poll_rate_redundancy	read1_de_redundancy	read1_poll_rate_de_redundancy	read2_redundancy	read2_poll_rate_redundancy	read2_de_redundancy	read2_poll_rate_de_redundancy	read1_species_de_redundancy	read2_species_de_redundancy
-Bacteria		nan%		nan%		nan%		nan%		
-Phages	1273	12.73%	593	5.93%	1277	12.77%	600	6.0%	82	81
-Viruses	2176	21.76%	857	8.57%	2013	20.13%	891	8.91%	66	68

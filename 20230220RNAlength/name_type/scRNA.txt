@@ -1,5 +1,0 @@
-Gene Name	Gene type
-MASCRNA	scRNA
-RN7SL2	scRNA
-RN7SL3	scRNA
-RN7SL1	scRNA

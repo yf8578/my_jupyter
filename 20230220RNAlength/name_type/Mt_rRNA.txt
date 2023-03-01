@@ -1,3 +1,0 @@
-Gene Name	Gene type
-RNR1	Mt_rRNA
-RNR2	Mt_rRNA
